@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block title %}index{% endblock title %}
+   
+{% block body %}
+    welcome to index {{request.user}}
+    
+  
+{% endblock body %}
+
+{% block logindetail %}
+<a class="btn btn-outline-primary mx-1  "  href="/login" role="button">Login</a>
+<a class="btn btn-outline-primary mx-1  "  href="/register" role="button">Register</a>
+{% endblock logindetail %}

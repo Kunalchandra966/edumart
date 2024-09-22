@@ -1,0 +1,13 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock title %} 
+
+{% block body %}
+<p>this is the best website</p>
+{% endblock body %} 
+
+{% block logindetail %}
+<div class="navbar-brand mx-1">{{request.user}}</div>
+<div class="btn-group">
+  <a href="/logout" class="btn btn-danger mx-2">Logout</a>
+</div>
+{% endblock logindetail %}
